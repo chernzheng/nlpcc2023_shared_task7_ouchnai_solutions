@@ -13,7 +13,7 @@ Our coherence scoring model encompasses a regression model with two feature extr
 
 The LCD is a sequence classification model fine-tuned on BERT with external data. This model accepts three consecutive sentences as input and generates a probability estimate of the coherence for the sequence. We divided the essay into consecutive sentences, took each as the model input, and obtained the ratio of coherent sequences to total sequences. The PC is a token classification model also fine-tuned on BERT with external data. This model examines the essay's punctuation usage, focusing explicitly on identifying redundant, missing, and misused commas and periods.
 
-We employ a GBRT to map features extracted from LCD and PC into a final global coherence score. We impose linguistically-informed monotonicity constraints on all features, thereby enhancing the model's generalization ability.
+We employ a GBRT to map features extracted from LCD and PC into a final global coherence score. We imposed linguistically-informed monotonicity constraints on all features and showed that the regulations enhanced the model's generalization ability.
 
 ## Track 2. Text Topic Extraction
 
