@@ -1,4 +1,4 @@
-## Track 1, Coherence Evaluation
+## Track 1. Coherence Evaluation
 
 | Team Name | Precision | Recall | Macro-F1 | Accuracy |
 | --- | --- | --- | --- | --- |
@@ -15,14 +15,14 @@ The LCD is a sequence classification model fine-tuned on BERT with external data
 
 We employ a GBRT to map features extracted from LCD and PC into a final global coherence score. We impose linguistically-informed monotonicity constraints on all features, thereby enhancing the model's generalization ability.
 
-## Track 2
+## Track 2. Text Topic Extraction
 
 | Team Name | Paragraph Accuracy | Full Accuracy | Final Accuracy | Paragraph Similarity | Full Similarity |
 | --- | --- | --- | --- | --- | --- |
 | wuwuwu | 61.27 | 34.92 | 42.82 | 87.34 | 80.37 |
 | ouchnai (us) | 62.61 | 33.33 | 42.12 | 85.20 | 79.16 |
 
-## Track 3 
+## Track 3. Paragraph Logical Relation Recognition
 
 | Team Name | Precision | Recall | Macro-F1 | Accuracy |
 | --- | --- | --- | --- | --- |
@@ -31,7 +31,7 @@ We employ a GBRT to map features extracted from LCD and PC into a final global c
 | Lrt123 | 28.19 | 30.26 | 27.54 | 48.81 |
 | BLCU_teamworkers | 27.17 | 27.65 | 25.95 | 48.73 |
 
-## Track 4
+## Track 4. Sentence Logical Relation Recognition
 
 | Team Name | Precision | Recall | Macro-F1 | Accuracy |
 | --- | --- | --- | --- | --- |
