@@ -1,4 +1,4 @@
-## Track 1 Coherence Evaluation
+## Track 1, Coherence Evaluation
 
 | Team Name | Precision | Recall | Macro-F1 | Accuracy |
 | --- | --- | --- | --- | --- |
