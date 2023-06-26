@@ -28,7 +28,7 @@ In our approach, we employ two token classification models to identify both para
 
 The first model accepts the essay title connected to a paragraph as input. For each token, it outputs a label indicating whether the token belongs to the theme sentences of the paragraph (designated as a key token). The theme sentences of each paragraph are determined by the ratio of key tokens to the total number of tokens within the sentence. We select the sentence with the highest ratio as the theme sentence for that paragraph. The model is fine-tuned on BERT.
 
-The second model is similar to the first, but the input is a sequence that links the essay title to each paragraph's theme sentence. We assume that the overall theme sentence is one of the paragraph theme sentences and determine it by calculating the ratio of key tokens to the total number of tokens within each paragraph theme sentence. We select the sentence with the highest ratio as the overall theme sentence. The second model is fine-tuned on the first model.
+The second model is similar to the first, but the input is a sequence that connects the essay title to all paragraph's theme sentences. We assume that the overall theme sentence is one of the paragraph theme sentences and determine it by calculating the ratio of key tokens to the total number of tokens within each paragraph theme sentence. We select the sentence with the highest ratio as the overall theme sentence. The second model is fine-tuned on the first model.
 
 ## Track 3. Paragraph Logical Relation Recognition
 
