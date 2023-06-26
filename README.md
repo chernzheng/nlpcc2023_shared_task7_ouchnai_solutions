@@ -1,5 +1,4 @@
-# nlpcc2023_shared_task7_ouchnai_solutions
-## Track 1
+## Track 1 Coherence Evaluation
 
 | Team Name | Precision | Recall | Macro-F1 | Accuracy |
 | --- | --- | --- | --- | --- |
