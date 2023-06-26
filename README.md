@@ -22,6 +22,14 @@ We employ a GBRT to map features extracted from LCD and PC into a final global c
 | wuwuwu | 61.27 | 34.92 | 42.82 | 87.34 | 80.37 |
 | ouchnai (us) | 62.61 | 33.33 | 42.12 | 85.20 | 79.16 |
 
+The Ouchnai solution for Track 2:
+
+In our approach, we employ two token classification models to identify both paragraph-level and overall theme sentences. 
+
+The first model accepts the essay title and each paragraph as input, and for each token, it outputs a label indicating whether the token belongs to the theme sentences of the respective paragraph (designated as a key token). The theme sentences of each paragraph are determined based on the ratio of key tokens to the total number of tokens within the sentence. We select the sentence with the highest ratio as the theme sentence for that paragraph. The model is fine-tuned on BERT. 
+
+The second model is similar to the first, but the input is a sequence that links the essay title to each paragraph's theme sentence. We assume that the overall theme sentence is one of the paragraph theme sentences and determine it by calculating the ratio of key tokens to the total number of tokens within each paragraph theme sentence. We select the sentence with the highest ratio as the overall theme sentence. The second model is fine-tuned on the first model.
+
 ## Track 3. Paragraph Logical Relation Recognition
 
 | Team Name | Precision | Recall | Macro-F1 | Accuracy |
