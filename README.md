@@ -39,6 +39,10 @@ The second model is similar to the first, but the input is a sequence that links
 | Lrt123 | 28.19 | 30.26 | 27.54 | 48.81 |
 | BLCU_teamworkers | 27.17 | 27.65 | 25.95 | 48.73 |
 
+The Ouchnai solution for Track 3:
+
+Our approach regards the paragraph-level logical relation recognition task as a sequence classification problem. Specifically, we process a pair of paragraphs as input, and the model determines the logical relationship between these paragraphs. Considering the similarity between this task and sentence-level logical relation recognition, we chose to fine-tune the model trained for Task 4.  
+
 ## Track 4. Sentence Logical Relation Recognition
 
 | Team Name | Precision | Recall | Macro-F1 | Accuracy |
@@ -46,3 +50,7 @@ The second model is similar to the first, but the input is a sequence that links
 | ouchnai (us) | 36.63 | 36.36 | 34.38 | 53.95 |
 | wuwuwu | 23.49 | 25.37 | 23.67 | 39.94 |
 | BLCU_teamworkers | 7.55 | 6.30 | 6.32 | 18.35 |
+
+The Ouchnai solution for Track 4:
+
+For Task 4, a sentence-level logical relation recognition task, we adopt a two-stage training strategy for the model. In the initial phase, we utilize an external dataset, TED-CDB, to pre-train a sequence classification model based on BERT. In the subsequent phase, we fine-tune the pre-trained model on the current dataset to enhance its performance for the given task. 
