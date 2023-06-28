@@ -8,6 +8,7 @@
 | CLsuper | 34.13 | 34.28 | 32.80 | 32.88 |
 
 The Ouchnai solution for Track 1:
+![Bilby Stampede](https://github.com/chernzheng/nlpcc2023_shared_task7_ouchnai_solutions/blob/main/track1/model.png)
 
 Our coherence scoring model encompasses a regression model with two feature extractors: a local coherence discriminative model (LCD) and a punctuation correction model (PC).
 
