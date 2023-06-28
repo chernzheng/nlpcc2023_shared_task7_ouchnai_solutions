@@ -4,7 +4,7 @@
 | --- | --- | --- | --- | --- |
 | EssayFlow | 38.50 | 43.54 | 32.54 | 43.99 |
 | Evay Info AI Team | 35.64 | 35.70 | 35.61 | 36.05 |
-| <strong>ouchnai (us)</strong> | 36.38 | 41.32 | 33.22 | 34.92 |
+| <strong>ouchnai (us)</strong> | <strong>36.38</strong> | <strong>41.32</strong> | <strong>33.22</strong> | <strong>34.92</strong> |
 | CLsuper | 34.13 | 34.28 | 32.80 | 32.88 |
 
 The Ouchnai solution for Track 1:
@@ -20,7 +20,7 @@ We employ a GBRT to map features extracted from LCD and PC into a final global c
 | Team Name | Paragraph Accuracy | Full Accuracy | Final Accuracy | Paragraph Similarity | Full Similarity |
 | --- | --- | --- | --- | --- | --- |
 | wuwuwu | 61.27 | 34.92 | 42.82 | 87.34 | 80.37 |
-| <strong>ouchnai (us)</strong> | 62.61 | 33.33 | 42.12 | 85.20 | 79.16 |
+| <strong>ouchnai (us)</strong> | <strong>62.61</strong> | <strong>33.33</strong> | <strong>42.12</strong> | <strong>85.20</strong> | <strong>79.16</strong> |
 
 The Ouchnai solution for Track 2:
 
@@ -34,7 +34,7 @@ The second model is similar to the first, but the input is a sequence that conne
 
 | Team Name | Precision | Recall | Macro-F1 | Accuracy |
 | --- | --- | --- | --- | --- |
-| <strong>ouchnai (us)</strong> | 54.66 | 52.45 | 52.16 | 71.03 |
+| <strong>ouchnai (us)</strong> | <strong>54.66</strong> | <strong>52.45</strong> | <strong>52.16</strong> | <strong>71.03</strong> |
 | wuwuwu | 29.26 | 28.98 | 28.77 | 46.97 |
 | Lrt123 | 28.19 | 30.26 | 27.54 | 48.81 |
 | BLCU_teamworkers | 27.17 | 27.65 | 25.95 | 48.73 |
@@ -47,10 +47,10 @@ Our approach regards the paragraph-level logical relation recognition task as a 
 
 | Team Name | Precision | Recall | Macro-F1 | Accuracy |
 | --- | --- | --- | --- | --- |
-| <strong>ouchnai (us)</strong> | 36.63 | 36.36 | 34.38 | 53.95 |
+| <strong>ouchnai (us)</strong> | <strong>36.63</strong> | <strong>36.36</strong> | <strong>34.38</strong> | <strong>53.95</strong> |
 | wuwuwu | 23.49 | 25.37 | 23.67 | 39.94 |
 | BLCU_teamworkers | 7.55 | 6.30 | 6.32 | 18.35 |
 
 The Ouchnai solution for Track 4:
 
-For Task 4, a sentence-level logical relation recognition task, we adopt a two-stage training strategy for the model. In the initial phase, we utilize an external dataset, TED-CDB, to pre-train a sequence classification model based on BERT. In the subsequent phase, we fine-tune the pre-trained model on the current dataset to enhance its performance for the given task. 
+For Task 4, we adopt a two-stage training strategy for the model. In the initial stage, we utilize an external dataset, [TED-CDB](https://github.com/wanqiulong0923/TED-CDB), to pre-train a sequence classification model based on BERT. In the subsequent stage, we fine-tune the pre-trained model on the current dataset to enhance its performance for the given task. 
